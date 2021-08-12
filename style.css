@@ -1,0 +1,147 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: beige;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.infosliders {
+    display: flex;
+    width: 300px;
+    height: 182px;
+    overflow: hidden;
+    background: #fff;
+    border: 2px solid #8bc34a;
+    position: relative;
+}
+
+.infoslider {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    background: #fff;
+    padding: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: absolute;
+    transition: all ease 2s;
+    left: 0;
+    top: 0;
+}
+
+.infoslider__body {
+    display: flex;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.infoslider__content {
+    display: flex;
+    width: 60%;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-right: 14px;
+}
+
+.infoslider__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 2px solid #f44336;
+    border-bottom: 2px solid #f44336;
+    padding: 6px 0px;
+    color: #000;
+    text-decoration: none;
+}
+
+.infoslider__title:hover {
+    border-top: 2px solid #bf2d23;
+    border-bottom: 2px solid #bf2d23;
+}
+
+.infoslider__text {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    min-height: 80px;
+}
+
+.infoslider__text ul {
+    margin: 0px;
+    padding: 0px 0px 0px 6px;
+}
+
+.infoslider__text ul li {
+    padding: 2px 0px;
+}
+
+.infoslider__image {
+    display: flex;
+    width: 40%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.infoslider__button {
+    background: #f44336;
+    border: 0px;
+    color: #fff;
+    padding: 7px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.infoslider__button:hover {
+    color: #fff4f4;
+    background-color: #bf2d23;
+}
+
+.infoslider__button:active {
+    background-color: #f44336;
+}
+
+.infoslider__navigation {
+    display: flex;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 14px;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.infoslider__navigation span {
+    width: 6px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    margin: 0px 6px;
+    border-radius: 10px;
+}
+
+.infoslider__navigation span.active {
+    background: none;
+    border: 2px solid #f44336;
+    width: 4px;
+    height: 4px;
+}
+
+
+
+
+
+@media (max-width: 992px) {}
